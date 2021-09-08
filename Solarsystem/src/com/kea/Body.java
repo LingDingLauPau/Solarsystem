@@ -25,6 +25,17 @@ class Sun extends Body {
     int planets = 8;
     int moons = 0;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -58,12 +69,12 @@ class Sun extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -80,6 +91,17 @@ class Mercury extends Body {
     int planets = 0;
     int moons = 0;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -113,12 +135,12 @@ class Mercury extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -135,6 +157,17 @@ class Venus extends Body {
     int planets = 0;
     int moons = 0;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -168,12 +201,12 @@ class Venus extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -190,6 +223,17 @@ class Earth extends Body {
     int planets = 0;
     int moons = 1;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -223,12 +267,12 @@ class Earth extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -245,6 +289,17 @@ class Mars extends Body {
     int planets = 0;
     int moons = 2;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -278,12 +333,12 @@ class Mars extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -300,6 +355,17 @@ class Jupiter extends Body {
     int planets = 0;
     int moons = 79;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -333,12 +399,12 @@ class Jupiter extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -355,6 +421,17 @@ class Saturn extends Body {
     int planets = 0;
     int moons = 82;
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -388,12 +465,12 @@ class Saturn extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -411,7 +488,17 @@ class Uranus extends Body {
     int moons = 27;
 
 
-
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
     @Override
     public void rotateRate() {
@@ -445,12 +532,12 @@ class Uranus extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
@@ -468,6 +555,17 @@ class Neptune extends Body {
     int moons = 14;
 
 
+    public void all(){
+        System.out.println("\n" + name);
+        rotateRate();
+        orbitalTime();
+        size();
+        mass();
+        velocity();
+        temperature();
+        planets();
+        moons();
+    }
 
 
     @Override
@@ -502,12 +600,12 @@ class Neptune extends Body {
 
     @Override
     public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " orbiting it.");
+        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
     }
 
     @Override
     public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " orbiting it.");
+        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
 }
