@@ -31,6 +31,7 @@ public class Main {
         Planet neptune = new Planet("Neptune", 16,60195,
                 57.741,5.155,5,72,0,14);
 
+        sun.all();
         mercury.all();
         venus.all();
         earth.all();
