@@ -13,7 +13,7 @@ abstract class Body {
 
 }
 
-class Sun extends Body {
+class Star extends Body {
 
     String name = "The Sun";
     int rotateRate = 27;
@@ -24,6 +24,18 @@ class Sun extends Body {
     int temperature = 5772;
     int planets = 8;
     int moons = 0;
+
+    public Star(String name, int rotateRate, int orbitalTime, double size, double mass, int velocity, int temperature, int planets, int moons) {
+        this.name = name;
+        this.rotateRate = rotateRate;
+        this.orbitalTime = orbitalTime;
+        this.size = size;
+        this.mass = mass;
+        this.velocity = velocity;
+        this.temperature = temperature;
+        this.planets = planets;
+        this.moons = moons;
+    }
 
     public void all(){
         System.out.println("\n" + name);
@@ -79,480 +91,31 @@ class Sun extends Body {
 
 }
 
-class Mercury extends Body {
 
-    String name = "Mercury";
-    int rotateRate = 0;
-    double orbitalTime = 88;
-    double size = 0.147;
-    double mass = 0.056;
-    int velocity = 47;
-    int temperature = 387;
-    int planets = 0;
-    int moons = 0;
+    class Planet extends Body {
 
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
+        String name = "";
+        int rotateRate;
+        int orbitalTime;
+        double size;
+        double mass;
+        int velocity;
+        int temperature;
+        int planets;
+        int moons;
+
+
+    public Planet(String name, int rotateRate, int orbitalTime, double size, double mass, int velocity, int temperature, int planets, int moons) {
+        this.name = name;
+        this.rotateRate = rotateRate;
+        this.orbitalTime = orbitalTime;
+        this.size = size;
+        this.mass = mass;
+        this.velocity = velocity;
+        this.temperature = temperature;
+        this.planets = planets;
+        this.moons = moons;
     }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Venus extends Body {
-
-    String name = "Venus";
-    int rotateRate = -117;
-    int orbitalTime = 225;
-    double size = 0.949;
-    double mass = 0.815;
-    int velocity = 35;
-    int temperature = 737;
-    int planets = 0;
-    int moons = 0;
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Earth extends Body {
-
-    String name = "Earth";
-    int rotateRate = 24;
-    int orbitalTime = 365;
-    double size = 1;
-    double mass = 1;
-    int velocity = 30;
-    int temperature = 287;
-    int planets = 0;
-    int moons = 1;
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Mars extends Body {
-
-    String name = "Mars";
-    int rotateRate = 25;
-    int orbitalTime = 687;
-    double size = 0.533;
-    double mass = 0.107;
-    int velocity = 24;
-    int temperature = 210;
-    int planets = 0;
-    int moons = 2;
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Jupiter extends Body {
-
-    String name = "Jupiter";
-    int rotateRate = 10;
-    int orbitalTime = 4332;
-    double size = 11.209;
-    double mass = 317.812;
-    int velocity = 13;
-    int temperature = 116;
-    int planets = 0;
-    int moons = 79;
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Saturn extends Body {
-
-    String name = "Saturn";
-    int rotateRate = 10;
-    int orbitalTime = 10759;
-    double size = 763.599;
-    double mass = 95.159;
-    int velocity = 10;
-    int temperature = 134;
-    int planets = 0;
-    int moons = 82;
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Uranus extends Body {
-
-    String name = "Uranus";
-    int rotateRate = -17;
-    int orbitalTime = 30688;
-    double size = 63.086;
-    double mass = 14.536;
-    int velocity = 7;
-    int temperature = 76;
-    int planets = 0;
-    int moons = 27;
-
-
-    public void all(){
-        System.out.println("\n" + name);
-        rotateRate();
-        orbitalTime();
-        size();
-        mass();
-        velocity();
-        temperature();
-        planets();
-        moons();
-    }
-
-    @Override
-    public void rotateRate() {
-        System.out.println("Rotates: " + name + " rotates once every " + rotateRate + " hours.");
-    }
-
-    @Override
-    public void orbitalTime() {
-        System.out.println("Orbit: " + name + " orbits the Sun every " + orbitalTime + " days.");
-    }
-
-    @Override
-    public void size(){
-        System.out.println("Size: " + name + " is " + size + " times Earths size.");
-    }
-
-    @Override
-    public void mass() {
-        System.out.println("Mass: " + name + " is " + mass + " times Earths mass.");
-    }
-
-    @Override
-    public void velocity() {
-        System.out.println("Velocity: " + name + " is traveling with " + velocity + "km/s.");
-    }
-
-    @Override
-    public void temperature() {
-        System.out.println("Temperature: " + name + " is " + temperature + "Kº.");
-    }
-
-    @Override
-    public void planets() {
-        System.out.println("Planets orbiting: " + name + " has " + planets + " planets orbiting it.");
-    }
-
-    @Override
-    public void moons() {
-        System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
-    }
-
-}
-
-class Neptune extends Body {
-
-    String name = "Neptune";
-    int rotateRate = 16;
-    int orbitalTime = 60195;
-    double size = 57.741;
-    double mass = 5.155;
-    int velocity = 5;
-    int temperature = 72;
-    int planets = 0;
-    int moons = 14;
 
 
     public void all(){
@@ -608,4 +171,75 @@ class Neptune extends Body {
         System.out.println("Moons orbiting: " + name + " has " + moons + " moons orbiting it.");
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRotateRate() {
+        return rotateRate;
+    }
+
+    public void setRotateRate(int rotateRate) {
+        this.rotateRate = rotateRate;
+    }
+
+    public int getOrbitalTime() {
+        return orbitalTime;
+    }
+
+    public void setOrbitalTime(int orbitalTime) {
+        this.orbitalTime = orbitalTime;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public void setSize(double size) {
+        this.size = size;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public void setMass(double mass) {
+        this.mass = mass;
+    }
+
+    public int getVelocity() {
+        return velocity;
+    }
+
+    public void setVelocity(int velocity) {
+        this.velocity = velocity;
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
+    }
+
+    public int getPlanets() {
+        return planets;
+    }
+
+    public void setPlanets(int planets) {
+        this.planets = planets;
+    }
+
+    public int getMoons() {
+        return moons;
+    }
+
+    public void setMoons(int moons) {
+        this.moons = moons;
+    }
 }
